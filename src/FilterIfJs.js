@@ -1,25 +1,8 @@
-
-interface Array<T> {
-    // tslint:disable-next-line:ban-types
-    filterIf: (checker: boolean | Object, condition: (a: T) => boolean) => T[]
-}
-
 Array.prototype.filterIf = function (checker, condition) {
     if (checker) {
         return this.filter(condition)
     }
     return this
-}
-
-
-type Query = {
-    name: string
-    gpa: number
-}
-
-type Student = {
-    name: string
-    gpa: number
 }
 
 const datas = [
