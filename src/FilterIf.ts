@@ -11,7 +11,6 @@ Array.prototype.filterIf = function (checker, condition) {
     return this
 }
 
-
 type Query = {
     name: string
     gpa: number
